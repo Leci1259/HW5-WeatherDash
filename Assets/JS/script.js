@@ -57,16 +57,16 @@ var myWeatherInfo = function (lat,long,name) {
     .then(function (data) {
 
      //today temperature
-    todayWeatherInfo[0].text(data[0].current.temp)
+    todayWeatherInfo[0].text(data[0].daily.temp)
 
     //today wind
-    todayWeatherInfo[1].text(data.current.wind_speed)
+    todayWeatherInfo[1].text(data.daily.wind_speed)
 
     // today humidity
-    todayWeatherInfo[2].text(data.current.humidity)  
+    todayWeatherInfo[2].text(data.daily.humidity)  
     
     //today uvi
-    todayWeatherInfo[3].text(data.current.uvi) 
+    todayWeatherInfo[3].text(data.daily.uvi) 
     //uvi color change
     if (data.current.uvi < 3) {
         todayWeatherInfo[3].css("background-color", "green")   
