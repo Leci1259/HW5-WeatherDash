@@ -1,0 +1,52 @@
+*{
+    font-family: 'Amiri', serif;
+}
+main {
+    display: flex;
+}
+.column.side {
+    flex: 25%;
+  }
+.column.middle {
+    flex: 75%
+}
+
+.five-day{
+    display: flex;
+}
+.card {
+    flex-direction: row;    
+}
+
+header {
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+body {
+    background-color: white;
+}
+
+.search-box {
+    background-color: rgb(238,174,202) ;
+}
+
+.top-box {
+    border-style: solid;
+    border-color: rgba(148,187,233,1);
+    border-width: thick;
+}
+h5,
+h4 {
+    text-shadow: 2px 2px 5px rgba(238,174,202,1);
+}
+
+h1 {
+    text-shadow: 4px 4px 10px rgba(148,187,233,1);
+
+}
+
+ul {
+    list-style: none;
+}

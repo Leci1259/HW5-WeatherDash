@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400;1,700&display=swap" 
+    rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="./Assets/CSS/style.css"/>
+    <script src="https://kit.fontawesome.com/66b94f429f.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<header>
+    <h1> Weather Dashboard</h1>
+    <h3> Find out the weather of any city!</h6>
+</header>
+
+<main d-flex flex-rox>
+<div class="column side">
+<section class="container search-box">
+    <h5> Search For A City</h5>
+    <form>
+        <input type="text" class="city" placeholder="Atlanta">
+    </form>
+    <button id="submit"> Search</button>
+    <hr>
+</section>
+</div>
+
+<div class="column middle col-9">
+<section class= "top-box container">
+    <h4>City</h4>
+    <ul>
+        <li>Temp:<span id="today"></span></li>
+        <li>Wind:<span id="today"></span></li>
+        <li>Humidity<span id="today"></span></li>
+        <li>UV Index:<span id="today"></span></li>
+    </ul>
+
+</section>
+
+<section class="low-box container"> 
+    <h4>5-Day Forecast</h4>
+    <section class="five-day ">
+        <div id="card container">
+            <h6></h6>
+            <ul>
+                <li>Temp:<span id="week"></span></li>
+                <li>Wind:<span id="week"></span></li>
+                <li>Humidity:<span id="week"></span></li>
+            </ul>
+        </div>
+
+        <div id="card container">
+            <h6></h6>
+            <ul>
+                <li>Temp:<span id="week"></span></li>
+                <li>Wind:<span id="week"></span></li>
+                <li>Humidity:<span id="week"></span></li>
+            </ul>
+        </div>
+
+        <div id="card container">
+            <h6></h6>
+            <ul>
+                <li>Temp:<span id="week"></span></li>
+                <li>Wind:<span id="week"></span></li>
+                <li>Humidity:<span id="week"></span></li>
+            </ul>
+        </div>
+
+        <div id="card container">
+            <h6></h6>
+            <ul>
+                <li>Temp:<span id="week"></span></li>
+                <li>Wind:<span id="week"></span></li>
+                <li>Humidity:<span id="week"></span></li>
+            </ul>
+        </div>
+
+        <div id="card container">
+            <h6></h6>
+            <ul>
+                <li>Temp:<span id="week"></span></li>
+                <li>Wind:<span id="week"></span></li>
+                <li>Humidity:<span id="week"></span></li>
+            </ul>
+        </div>
+    </section>
+
+
+</section>
+</div>
+</main>
+
+<script src="./Assets/JS/script.js"></script>
+</body>
+</html>
