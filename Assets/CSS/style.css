@@ -1,8 +1,7 @@
-*{
-    font-family: 'Amiri', serif;
-}
 main {
     display: flex;
+    font-weight: 800;
+    font-family: 'Amiri', serif;
 }
 .column.side {
     flex: 25%;
@@ -49,4 +48,5 @@ h1 {
 
 ul {
     list-style: none;
+    
 }
