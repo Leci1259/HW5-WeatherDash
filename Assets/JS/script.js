@@ -7,8 +7,6 @@ var submitButton= $("#submit")
 var city= $(".city").val().trim();
 var laterWeatherDates= $(".weekHead")
 
-console.log(today)
-
 //api key
 var ApiKey="949cfd5d625b3cd45f6ad2527b38c843";
 

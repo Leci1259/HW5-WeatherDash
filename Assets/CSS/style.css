@@ -1,17 +1,26 @@
+*{
+    font-size: 1.1rem;
+}
 main {
     display: flex;
     font-weight: 800;
     font-family: 'Amiri', serif;
-}
-.column.side {
-    flex: 25%;
-  }
-.column.middle {
-    flex: 75%
+   
 }
 
+.low-box {
+    background-color:rgba(148,187,233,1) ;
+    color: rgb(238,174,202);
+    text-shadow: 2px 2px 5px rgb(22, 112, 214);
+    border-style: solid;
+    border-width: thick;
+
+}
 .five-day{
     display: flex;
+    justify-content: space-around;
+    
+    
 }
 .card {
     flex-direction: row;    
@@ -33,12 +42,16 @@ body {
 
 .top-box {
     border-style: solid;
-    border-color: rgba(148,187,233,1);
     border-width: thick;
+    background-color: rgba(148,187,233,1);
+    color: rgb(238,174,202);
+    text-shadow: 2px 2px 5px rgb(22, 112, 214);
+   
+    
 }
 h5,
 h4 {
-    text-shadow: 2px 2px 5px rgba(238,174,202,1);
+    text-shadow: 2px 2px 5px rgb(22, 112, 214);
 }
 
 h1 {
@@ -49,4 +62,8 @@ h1 {
 ul {
     list-style: none;
     
+}
+
+.container.card {
+    background-color: rgba(148,187,233,1);
 }
