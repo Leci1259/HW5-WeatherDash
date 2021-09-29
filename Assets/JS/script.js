@@ -171,7 +171,8 @@ function init () {
         myCityInfo(city)
     }
     else {
-        myCityInfo("atlanta")
+        city="atlanta"
+        myCityInfo(city)
     }
     
     
