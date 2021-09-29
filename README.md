@@ -32,7 +32,7 @@ THEN I am again presented with current and future conditions for that city
 
 
 ## Website Preview
-![Website Image.](https://github.com/Leci1259/HW6-WeatherDash/blob/main/Assets/Img/SS.jpg)
+![Website Image.](https://github.com/Leci1259/HW6-WeatherDash/blob/main/Assets/IMG/SS.jpg)
 
 
 ## Website Link
