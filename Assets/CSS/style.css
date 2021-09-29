@@ -50,8 +50,10 @@ body {
     
 }
 h5,
-h4 {
+h4,
+h6 {
     text-shadow: 2px 2px 5px rgb(22, 112, 214);
+    font-weight: bold;
 }
 
 h1 {
@@ -67,3 +69,4 @@ ul {
 .container.card {
     background-color: rgba(148,187,233,1);
 }
+
