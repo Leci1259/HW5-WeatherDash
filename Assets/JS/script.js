@@ -165,7 +165,7 @@ function init () {
     //Grab stored city list from local storage
     var lastCity = localStorage.getItem("storedCity")
     
-    if (lastCity) {
+    if (lastCity !== undefined) {
         city=lastCity;
        //Run through function 
         myCityInfo(city)
