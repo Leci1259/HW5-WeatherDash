@@ -2,7 +2,7 @@
 var todayWeatherInfo = $(".today")
 var laterWeatherInfo = $(".week")
 var cityInput = $("input")
-var buttonHolder= $("#button-holder")
+var buttonHolder= $(".button-holder")
 var submitButton= $("#submit")
 var laterWeatherDates= $(".weekHead")
 var storedCity;
@@ -41,8 +41,7 @@ var myWeatherInfo = function (lat,lon,name) {
     .then(function(response) {
         return response.json();
     })
-    .then(function (data,name) {
-        console.log(data)   
+    .then(function (data,name) {   
         displayData(data)
     })
     $("#cityName").text(name.toUpperCase() +" " + moment().format("MM/DD/YYYY"))
@@ -110,16 +109,18 @@ var displayData = function (data) {
 
 //append city buttons to side
 var appendButton = function (city) {
+    
+        //append button
+        var cityButton = $('<input/>').attr({
+            type: "button",
+            class: "side-button",
+            value: city,
+        
+        });
 
-    //append button
-    var cityButton = $('<input/>').attr({
-        type: "button",
-        id: "field",
-        value: city,
-       
-   });
+        $(".button-holder").append(cityButton);
+    
 
-    $(".button-holder").append(cityButton);
 
     //change value of storedCity and save it to local storage
     storedCity=city;
@@ -153,7 +154,7 @@ buttonHolder.on('click', function(event) {
     var button = event.target
 
     //get the city from that button
-    city = button.text();
+    city = $(button).val();
 
     //run city through weather data process again
     myCityInfo(city)
