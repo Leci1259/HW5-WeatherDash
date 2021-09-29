@@ -170,6 +170,9 @@ function init () {
        //Run through function 
         myCityInfo(city)
     }
+    else {
+        myCityInfo(atlanta)
+    }
     
     
 }
