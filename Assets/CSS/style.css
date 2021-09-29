@@ -70,3 +70,8 @@ ul {
     background-color: rgba(148,187,233,1);
 }
 
+.button-holder input {
+    background-color: rgba(148,187,233,1);
+    color: rgb(238,174,202);
+    text-shadow: 2px 2px 5px rgb(22, 112, 214);
+}

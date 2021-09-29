@@ -41,16 +41,15 @@ var myWeatherInfo = function (lat,lon,name) {
     .then(function(response) {
         return response.json();
     })
-    .then(function (data) {
+    .then(function (data,name) {
         console.log(data)   
         displayData(data)
     })
+    $("#cityName").text(name.toUpperCase() +" " + moment().format("MM/DD/YYYY"))
 }
 
 
-var displayData = function (data) {
-    //display name and date 
-    $("#cityName").text(name.toUpperCase() +" " + moment().format("MM/DD/YYYY"))
+var displayData = function (data) {    
 
     //display icon
     $(images[0]).attr("src","https://openweathermap.org/img/w/" + data.daily[0].weather[0].icon + ".png")
@@ -112,15 +111,15 @@ var displayData = function (data) {
 //append city buttons to side
 var appendButton = function (city) {
 
-    //create button elements
-    var cityButton = document.createElement("button");
-
-    //add class and text content
-    cityButton.textContent= city;
-    cityButton.classList="side-buttons"
-
     //append button
-    buttonHolder.append(cityButton);
+    var cityButton = $('<input/>').attr({
+        type: "button",
+        id: "field",
+        value: city,
+       
+   });
+
+    $(".button-holder").append(cityButton);
 
     //change value of storedCity and save it to local storage
     storedCity=city;
@@ -146,8 +145,6 @@ submitButton.on('click', function(event) {
     //clears input
     $(".city").text('');
 
-    //appends button on side
-    appendButton (city);
 });
 
 //on side button click
