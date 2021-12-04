@@ -1,0 +1,18 @@
+#search-box {
+  background-color: #a0d8fc;
+  margin-top: 20%;
+  border-style: ridge;
+  border-width: thick;
+  border-color: white;
+  color: white;
+  text-shadow: 0 0 5px #38a9f2;
+  font-size: 1.5rem;
+}
+
+.searchInput {
+  background-color: white;
+  color: #38a9f2;
+  border-style: solid;
+  border-color: #38a9f2;
+  font-size: 1.2rem;
+}

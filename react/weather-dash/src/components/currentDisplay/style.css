@@ -1,0 +1,38 @@
+.topDisplay {
+  background-color: white;
+  text-align: left;
+  font-weight: bold;
+  color: #38a9f2;
+  border-style: groove;
+  border-width: thick;
+  border-color: #38a9f2;
+}
+
+ul {
+  list-style: none;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5%;
+  margin-left: 10%;
+  width: 100%;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: white;
+  color: #38a9f2;
+  font-weight: bold;
+  padding: 1%;
+  text-align: left;
+  border-style: ridge;
+  border-width: thick;
+  border-color: #38a9f2;
+}
